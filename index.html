@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superworld</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F5F5DC;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            font-family: Sitka, 'Sitka Text', Georgia, serif;
+        }
+
+        .logo {
+            max-width: 600px;
+            width: 90%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .location {
+            font-family: 'Sitka Banner', Sitka, Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+            color: black;
+            margin-bottom: 40px;
+            letter-spacing: 0.1em;
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="suwologo.png" alt="Superworld Logo" class="logo">
+    <p class="location">"SAN JOSE, CA"</p>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/f6TyvASj4qc" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</body>
+</html>
